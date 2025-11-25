@@ -9,7 +9,7 @@ import logo from "../assets/logo2.png";
 const FloatingParticles = () => {
   const particles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
-    size: Math.random() * 3 + 2,
+    size: Math.random() * 1 + 2,
     x: Math.random() * 100,
     y: Math.random() * 100,
     duration: Math.random() * 20 + 10,
@@ -36,11 +36,11 @@ const FloatingParticles = () => {
 }; 
 
 const slides = [
-  {
-    img: influencerimage1,
-    title: "INFLUENCE REDEFINED",
-    subtitle: "Empowering creators with next-level digital presence.",
-  },
+  // {
+  //   img: influencerimage1,
+  //   title: "INFLUENCE REDEFINED",
+  //   subtitle: "Empowering creators with next-level digital presence.",
+  // },
   {
     img: influencerimage2,
     title: "CONNECT • COLLABORATE • CREATE",

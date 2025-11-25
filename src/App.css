@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-float-delayed { animation: float 5s ease-in-out infinite; }
+.animate-float-slow { animation: float 6s ease-in-out infinite; }
+
+@keyframes expand {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+.animate-expand { animation: expand 1.4s ease-out forwards; }
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 12s linear infinite; }
+
+.glitch {
+  text-shadow: 2px 2px #ff00c8, -2px -2px #00d9ff;
+}
+
