@@ -13,6 +13,8 @@ import HeroCrazy from './HeroCrazy'
 import HeroLuxuryFunky from './HeroCrazy'
 import HeroGen from './HeroCrazy'
 import Whydigital from './Whydigital'
+import Industries from './Industries'
+import Apart from './Apart'
 
 const Home = () => {
   return (
@@ -23,7 +25,10 @@ const Home = () => {
       {/* <HowItWorks/> */}
       <Features/>
       <Service/>
+      <Industries/>
       <Whydigital/>
+      <Apart/>
+
       <Stats/>
       <Testimonials/>
       <CTA/>

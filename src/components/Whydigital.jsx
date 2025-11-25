@@ -29,13 +29,11 @@ export default function Whydigital() {
   return (
     <section className="relative py-24 px-6 bg-[#faf7f2] overflow-hidden">
 
-      {/* Background Blobs */}
       <div className="absolute w-[500px] h-[500px] bg-purple-200 blur-[180px] opacity-40 rounded-full -top-40 left-0"></div>
       <div className="absolute w-[350px] h-[350px] bg-yellow-200 blur-[150px] opacity-40 rounded-full bottom-0 right-0"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
 
-        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +58,6 @@ export default function Whydigital() {
           </p>
         </motion.div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {reasons.map((item, index) => (
             <motion.div

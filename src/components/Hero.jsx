@@ -3,7 +3,7 @@ import influencerimage1 from "../assets/influencerimage1.jpg";
 import influencerimage2 from "../assets/influencerimage2.jpg";
 import influencerimage3 from "../assets/peopleimage3.jpg";
 import influencerimage4 from "../assets/influencerimage4.jpg";
-import logo from "../assets/logo2.png";
+
 
 // Floating particles component
 const FloatingParticles = () => {
@@ -70,7 +70,8 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative w-screen overflow-hidden bg-black container mx-auto mt-5 rounded-2xl h-[70vh] group">
+    <div className="relative w-screen overflow-hidden bg-black container mx-auto mt-5 rounded-2xl h-[70vh] group"
+  >
       <FloatingParticles />
       
       {/* Animated border gradient */}

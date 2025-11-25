@@ -65,7 +65,6 @@ export default function UnderHero() {
                 ></video>
 
                 <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-purple-900/40 to-black/80 flex flex-col items-center justify-center text-center px-6 relative">
-                    {/* Animated background elements */}
                     <div className="absolute inset-0 overflow-hidden">
                         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-yellow-400/20 rounded-full blur-2xl animate-pulse" />
                         <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -82,40 +81,37 @@ export default function UnderHero() {
                 ref={textSectionRef}
                 className="items-center text-center justify-center mb-50 flex flex-col relative"
             >
-                {/* Floating decorative elements */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-yellow-400/10 rounded-full blur-2xl animate-float" />
                     <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }} />
                     <div className="absolute top-3/4 left-3/4 w-20 h-20 bg-yellow-300/10 rounded-full blur-xl animate-float" style={{ animationDelay: '4s' }} />
                 </div>
 
-                {/* Enhanced arrow with glow */}
                 <div className="relative fade-item">
                     <FaArrowDownLong size={40} className="text-black hover:text-yellow-600 transition-colors duration-300 animate-bounce" />
                     <div className="absolute inset-0 bg-yellow-400/20 blur-lg animate-pulse" />
                 </div>
                 
-                {/* Enhanced Action text with multiple effects */}
                 <div className="relative mt-2 fade-item group">
                     <p className="font-medium text-6xl md:text-9xl text-gradient-animate hover:scale-105 transition-transform duration-500 cursor-default">
                         Action
                     </p>
-                    {/* Morphing background shape */}
+
                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-purple-500/10 blur-3xl animate-morphing -z-10" />
                 </div>
                 
-                {/* Enhanced arrow with different animation */}
+
                 <div className="relative mt-10 fade-item">
                     <FaArrowDownLong size={40} className="text-black hover:text-yellow-600 transition-colors duration-300 animate-bounce" style={{ animationDelay: '0.5s' }} />
                     <div className="absolute inset-0 bg-yellow-400/20 blur-lg animate-pulse" style={{ animationDelay: '0.5s' }} />
                 </div>
                 
-                {/* Enhanced Analytics text */}
+
                 <div className="relative mt-2 fade-item group">
                     <p className="font-medium text-6xl md:text-9xl text-gradient-animate hover:scale-105 transition-transform duration-500 cursor-default">
                         Analytics
                     </p>
-                    {/* Different morphing background shape */}
+
                     <div className="absolute inset-0 bg-gradient-to-l from-purple-400/10 to-yellow-500/10 blur-3xl animate-morphing -z-10" style={{ animationDelay: '2s' }} />
                 </div>
 

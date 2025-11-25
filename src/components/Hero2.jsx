@@ -3,15 +3,20 @@ import React, { useEffect, useRef } from "react";
 import { FaBolt } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import digitalmarketing from "../assets/digitalmarketing.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
   const heroRef = useRef(null);
 
-  // REFS FOR BUTTONS
+  // CTA Button refs
   const btn1Ref = useRef(null);
   const btn2Ref = useRef(null);
+
+  // NEW image refs
+  const leftImgRef = useRef(null);
+  const rightImgRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -24,7 +29,7 @@ export default function Hero() {
         ease: "power3.out",
       });
 
-      // BRAND BLOCK (BRANDS GO)
+      // BRAND BLOCK
       gsap.from(".brand-block", {
         opacity: 0,
         x: -80,
@@ -33,7 +38,7 @@ export default function Hero() {
         delay: 0.3,
       });
 
-      // BOLT ICON FLOAT
+      // ICON FLOAT
       gsap.to(".bolt", {
         rotate: 10,
         yoyo: true,
@@ -42,7 +47,7 @@ export default function Hero() {
         ease: "power1.inOut",
       });
 
-      // FLOATING BG CIRCLE
+      // BG FLOAT
       gsap.to(".float-shape-bg", {
         y: -25,
         x: 15,
@@ -52,7 +57,7 @@ export default function Hero() {
         ease: "sine.inOut",
       });
 
-      // STICKERS ENTRY
+      // STICKERS
       gsap.from(".sticker", {
         opacity: 0,
         rotate: -30,
@@ -61,21 +66,48 @@ export default function Hero() {
         ease: "back.out(2)",
       });
 
-      // CTA BUTTON POP — Using refs (NO flicker)
-      gsap.fromTo([btn1Ref.current, btn2Ref.current], 
-        {
-          opacity: 0,
-          scale: 0.7,
-        },
+      // CTA Buttons
+      gsap.fromTo(
+        [btn1Ref.current, btn2Ref.current],
+        { opacity: 0, scale: 0.7 },
         {
           opacity: 1,
           scale: 1,
           duration: 1,
-          delay: 0.5, // ensures layout is stable before animating
+          delay: 0.5,
           stagger: 0.2,
           ease: "back.out(1.7)",
         }
       );
+
+      // ------------------------------------
+      // ⭐ LEFT & RIGHT IMAGES SCROLL EFFECT
+      // ------------------------------------
+      gsap.to(leftImgRef.current, {
+        x: 200, // move toward center
+        y: 200, // move downward
+        rotate: 0,
+        scale: 0.95,
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top top",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
+
+      gsap.to(rightImgRef.current, {
+        x: -200, // move toward center
+        y: 200,
+        rotate: 0,
+        scale: 0.95,
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top top",
+          end: "bottom center",
+          scrub: true,
+        },
+      });
     }, heroRef);
 
     return () => ctx.revert();
@@ -102,6 +134,22 @@ export default function Hero() {
           YES!
         </div>
       </div>
+
+      {/* LEFT FUNKY IMAGE */}
+      <img
+        ref={leftImgRef}
+        src="https://i0.wp.com/timoelliott.com/blog/wp-content/uploads/2015/03/marketing-has-a-branding-problem.jpg?ssl=1"
+        alt="Influencer"
+        className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-60 rotate-[-8deg] drop-shadow-[10px_10px_0px_#000] border-[4px] border-black rounded-xl sticker"
+      />
+
+      {/* RIGHT FUNKY IMAGE */}
+      <img
+        ref={rightImgRef}
+        src="https://st2.depositphotos.com/1636517/6287/v/450/depositphotos_62874813-stock-illustration-change-agent.jpg"
+        alt="Influencer"
+        className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-64 rotate-[10deg] drop-shadow-[10px_10px_0px_#000] border-[4px] border-black rounded-xl sticker"
+      />
 
       {/* MAIN CONTENT */}
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
@@ -130,9 +178,8 @@ export default function Hero() {
           internet.
         </p>
 
+        {/* BUTTONS */}
         <div className="mt-10 flex justify-center gap-6 relative z-20">
-          <div className="w-16 h-16 bg-yellow-700 rounded-full shadow-[6px_6px_0px_#000]"></div>
-
           <button
             ref={btn1Ref}
             className="cta-btn px-8 py-4 bg-yellow-700 text-black font-bold text-lg rounded-full border-2 border-black shadow-[6px_6px_0px_#000] hover:translate-y-1 transition-all"
@@ -144,7 +191,7 @@ export default function Hero() {
             ref={btn2Ref}
             className="cta-btn px-8 py-4 bg-black text-white font-bold text-lg rounded-full shadow-[6px_6px_0px_#000] hover:-translate-y-1 transition-all"
           >
-            SEE OUR CRIMES
+            SEE OUR WORK ✨
           </button>
         </div>
       </div>
