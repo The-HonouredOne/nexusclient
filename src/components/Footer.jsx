@@ -4,8 +4,8 @@ import logo from '../assets/logo2.png'
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 overflow-hidden">
-      {/* Animated background elements */}
+    <footer className="relative bg-linear-to-br from-gray-900 via-black to-gray-900 text-white py-16 overflow-hidden">
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-yellow-400/5 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-500/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }} />
@@ -13,18 +13,18 @@ const Footer = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Top section with enhanced logo */}
+
         <div className="text-center mb-12">
           <div className="relative inline-block group">
             <img src={logo} alt="Logo" className="w-20 h-20 mx-auto mb-4 hover:scale-110 transition-all duration-300 hover-lift" />
             <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-          <h3 className="text-3xl font-bold mb-4 text-gradient-animate">Nexus Influence</h3>
+          <h3 className="text-3xl font-bold mb-4 text-gradient-animate">Influence Nexus </h3>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">Connecting influencers with brands for authentic partnerships that drive real results.</p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 mb-12">
-          {/* Company Info */}
+
           <div className="glass rounded-lg p-6 hover-lift">
             <div className="flex items-center mb-4">
               <FaRocket className="text-yellow-400 mr-2" />
@@ -46,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* For Influencers */}
+
           <div className="glass rounded-lg p-6 hover-lift">
             <div className="flex items-center mb-4">
               <FaStar className="text-yellow-400 mr-2" />
@@ -68,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* For Brands */}
+
           <div className="glass rounded-lg p-6 hover-lift">
             <h4 className="text-lg font-semibold mb-4 text-yellow-400">For Brands</h4>
             <ul className="space-y-3 text-gray-400">
@@ -87,7 +87,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Social Media */}
+
           <div className="glass rounded-lg p-6 hover-lift">
             <h4 className="text-lg font-semibold mb-4 text-yellow-400">Connect With Us</h4>
             <div className="grid grid-cols-2 gap-4">
@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Bottom section */}
+
         <div className="border-t border-gray-800/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">&copy; 2024 Nexus Influence. All rights reserved.</p>

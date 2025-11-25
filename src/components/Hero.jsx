@@ -9,11 +9,11 @@ import logo from "../assets/logo2.png";
 const FloatingParticles = () => {
   const particles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
-    size: Math.random() * 4 + 2,
+    size: Math.random() * 3 + 2,
     x: Math.random() * 100,
     y: Math.random() * 100,
     duration: Math.random() * 20 + 10,
-    delay: Math.random() * 5,
+    delay: Math.random() * 5, 
   }));
 
   return (
@@ -46,16 +46,16 @@ const slides = [
     title: "CONNECT • COLLABORATE • CREATE",
     subtitle: "Where influencers meet endless opportunities.",
   },
-  {
-    img: influencerimage3,
-    title: "AMPLIFY YOUR IMPACT",
-    subtitle: "Turn your influence into a powerful brand.",
-  },
-  {
-    img: influencerimage4,
-    title: "RISE ABOVE THE CROWD",
-    subtitle: "Stand out with strategy, creativity & innovation.",
-  },
+  // {
+  //   img: influencerimage3,
+  //   title: "AMPLIFY YOUR IMPACT",
+  //   subtitle: "Turn your influence into a powerful brand.",
+  // },
+  // {
+  //   img: influencerimage4,
+  //   title: "RISE ABOVE THE CROWD",
+  //   subtitle: "Stand out with strategy, creativity & innovation.",
+  // },
 ];
 
 export default function HeroSlider() {
@@ -86,7 +86,7 @@ export default function HeroSlider() {
             >
               
               {/* Enhanced gradient overlay with animated mesh */}
-              <div className="w-full h-full bg-gradient-to-br from-black/90 via-purple-900/30 to-black/90 flex items-center justify-center text-center px-6 relative">
+              <div className="w-full h-full flex items-center justify-center text-center px-6 relative">
                 
                 {/* Animated mesh background */}
                 <div className="absolute inset-0 opacity-10">
@@ -97,19 +97,17 @@ export default function HeroSlider() {
 
                 <div className="max-w-3xl animate-fadeInUp relative z-10">
                   
-                  {/* Enhanced logo with glow effect */}
-                  <div className="relative mb-6">
+                  {/* <div className="relative mb-6">
                     <img src={logo} alt="logo"
                       className="w-32 md:w-40 mx-auto drop-shadow-[0_0_40px_rgba(255,215,0,0.8)] hover:drop-shadow-[0_0_60px_rgba(255,215,0,1)] transition-all duration-500 hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-2xl animate-pulse" />
-                  </div>
+                  </div> */}
 
-                  {/* Enhanced title with multiple gradients */}
+
                   <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text 
                     bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300 drop-shadow-2xl
-                    hover:from-yellow-200 hover:via-yellow-400 hover:to-yellow-200 transition-all duration-500
-                    animate-pulse">
+                    hover:from-yellow-200 hover:via-yellow-400 hover:to-yellow-200 ">
                     {slide.title}
                   </h1>
 

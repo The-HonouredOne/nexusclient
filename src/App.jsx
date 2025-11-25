@@ -22,12 +22,12 @@ function App() {
         <div className="pt-20">
           <Home />
         </div>
-        <div className='bg-gradient-to-b from-black via-gray-900 to-black min-h-screen relative'>
+        {/* <div className='bg-gradient-to-b from-black via-gray-900 to-black min-h-screen relative'>
 
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-transparent via-yellow-400/5 to-transparent blur-3xl" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
