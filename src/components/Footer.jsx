@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaRocket, FaStar } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaRocket, FaStar, } from 'react-icons/fa'
 import logo from '../assets/logo2.png'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -45,7 +46,7 @@ const Footer = () => {
               </a></li>
             </ul>
           </div>
-          
+
 
           <div className="glass rounded-lg p-6 hover-lift">
             <div className="flex items-center mb-4">
@@ -67,7 +68,7 @@ const Footer = () => {
               </a></li>
             </ul>
           </div>
-          
+
 
           <div className="glass rounded-lg p-6 hover-lift">
             <h4 className="text-lg font-semibold mb-4 text-yellow-400">For Brands</h4>
@@ -86,7 +87,7 @@ const Footer = () => {
               </a></li>
             </ul>
           </div>
-          
+
 
           <div className="glass rounded-lg p-6 hover-lift">
             <h4 className="text-lg font-semibold mb-4 text-yellow-400">Connect With Us</h4>
@@ -95,7 +96,8 @@ const Footer = () => {
                 <FaFacebook className="text-2xl text-blue-400 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a href="#" className="flex items-center justify-center p-3 rounded-lg bg-sky-500/20 hover:bg-sky-500/40 transition-all duration-300 group">
-                <FaTwitter className="text-2xl text-sky-400 group-hover:scale-110 transition-transform duration-300" />
+                <FaXTwitter
+                  className="text-2xl text-sky-400 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a href="#" className="flex items-center justify-center p-3 rounded-lg bg-pink-600/20 hover:bg-pink-600/40 transition-all duration-300 group">
                 <FaInstagram className="text-2xl text-pink-400 group-hover:scale-110 transition-transform duration-300" />
@@ -106,7 +108,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
 
         <div className="border-t border-gray-800/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">

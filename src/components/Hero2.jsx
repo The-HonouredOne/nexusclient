@@ -118,67 +118,71 @@ export default function Hero() {
       ref={heroRef}
       className="relative w-full bg-white overflow-hidden pt-24 pb-20"
     >
-      {/* Floating Background Circle */}
+
       <div className="absolute top-32 left-10 w-24 h-24 bg-yellow-700 rounded-full float-shape-bg z-0"></div>
 
-      {/* WOW Sticker */}
+
       <div className="absolute top-16 right-16 rotate-12 sticker z-10">
         <div className="bg-yellow-700 px-4 py-2 text-white font-bold shadow-[4px_4px_0px_#000] rounded-sm text-sm">
           WOW!
         </div>
       </div>
 
-      {/* YES Sticker */}
+
       <div className="absolute bottom-16 left-32 rotate-[-10deg] sticker z-10">
         <div className="bg-black px-5 py-2 text-white font-bold shadow-[4px_4px_0px_#000] rounded-sm text-sm">
           YES!
         </div>
       </div>
 
-      {/* LEFT FUNKY IMAGE */}
+
       <img
         ref={leftImgRef}
-        src="https://i0.wp.com/timoelliott.com/blog/wp-content/uploads/2015/03/marketing-has-a-branding-problem.jpg?ssl=1"
+        src="
+       https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-NKg9U4cvRaB0xAxPZW2imcrnD5YdTV2fw&s"
         alt="Influencer"
         className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-60 rotate-[-8deg] drop-shadow-[10px_10px_0px_#000] border-[4px] border-black rounded-xl sticker"
       />
 
-      {/* RIGHT FUNKY IMAGE */}
+
       <img
         ref={rightImgRef}
-        src="https://st2.depositphotos.com/1636517/6287/v/450/depositphotos_62874813-stock-illustration-change-agent.jpg"
+        src="https://img.freepik.com/premium-vector/filming-with-smartphone-isolated-cartoon-vector-illustrations_107173-90411.jpg"
         alt="Influencer"
         className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-64 rotate-[10deg] drop-shadow-[10px_10px_0px_#000] border-[4px] border-black rounded-xl sticker"
       />
 
-      {/* MAIN CONTENT */}
+
+
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
         <div className="inline-block mb-8 bg-yellow-700 text-white px-6 py-2 rounded-full font-semibold text-sm shadow-[4px_4px_0px_#000]">
           ✨ DIGITAL MARKETING AGENCY
         </div>
 
+
         <h1 className="hero-title text-5xl md:text-7xl font-extrabold leading-tight text-black">
-          WE MAKE
+          From
         </h1>
 
         <h1 className="hero-title relative text-5xl md:text-7xl font-extrabold leading-tight mt-3 inline-block">
           <span className="brand-block bg-yellow-700 text-white px-6 py-2 shadow-[8px_8px_0px_#000]">
-            BRANDS GO
+            Authentic Voices
           </span>
         </h1>
 
         <h1 className="hero-title text-5xl md:text-7xl font-extrabold leading-tight flex justify-center items-center gap-4 mt-3 text-black">
-          VIRAL
+          to Viral Success
+
           <FaBolt className="bolt text-yellow-500 text-6xl drop-shadow-[3px_3px_0px_#000]" />
         </h1>
 
-        {/* Subtext */}
+
         <p className="mt-6 text-gray-800 max-w-2xl mx-auto text-lg">
           Scripting that slaps. Influencers that pop. Results that break the
           internet.
         </p>
 
-        {/* BUTTONS */}
+
         <div className="mt-10 flex justify-center gap-6 relative z-20">
           <button
             ref={btn1Ref}

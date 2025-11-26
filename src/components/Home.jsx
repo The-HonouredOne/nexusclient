@@ -15,6 +15,8 @@ import HeroGen from './HeroCrazy'
 import Whydigital from './Whydigital'
 import Industries from './Industries'
 import Apart from './Apart'
+import MissionVision from './MissionVision '
+import Portfolio from './Portfolio'
 
 const Home = () => {
   return (
@@ -29,7 +31,10 @@ const Home = () => {
       <Whydigital/>
       <Apart/>
 
+
       <Stats/>
+      <MissionVision/>
+      <Portfolio/>
       <Testimonials/>
       <CTA/>
       <Footer/>
